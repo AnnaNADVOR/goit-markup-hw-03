@@ -5,6 +5,13 @@
 /* колір фону герой, футер #2F303A*/
 /* колір фону секції Наша команда #F5F4FA*/
 
+/* .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: 2px solid tomato;
+} */
+
 :root {
     /* bg color */
     --accent-bg-color: #2F303A;
@@ -31,19 +38,37 @@ body {
     
 }
 
+/* reset */
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+} 
+
+img {
+    display: block;
+}
+
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .link {
     text-decoration: none;
 }
 
+
+
 /* button */
 .button {
-    font-family: inherit;
     border: none;
+    border-radius: 4px;
+
+    text-align: center;
     cursor: pointer;
+    display: inline-block;
+   
+    
 }
 
 /* logo */
@@ -74,6 +99,12 @@ body {
 
 } 
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
@@ -99,6 +130,7 @@ body {
 /* hero */
 .hero {
     background-color: var(--accent-bg-color);
+text-align: center;
     
 }
 
@@ -108,9 +140,12 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+   margin-bottom: 30px;
+   /* width: 696px; */
 }
 
 
@@ -122,6 +157,12 @@ body {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+
+    min-width: 216px;
+    min-height: 50px;
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
 }
 
 .button.primary:hover,
@@ -138,10 +179,15 @@ body {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
+    margin-bottom: 50px;
 }
 
 
 /* features */
+/* .features {
+    width: 270px;
+} */
 
 .features .title {
     color: var(--title-text-color);
@@ -149,9 +195,21 @@ body {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+
+    margin-bottom: 10px;
     
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+}
+
+.section.no-padding {
+     padding-top: 0;
+     
+}
 .features .text {
     font-size: 14px;
     line-height: 1.71;
@@ -169,7 +227,9 @@ body {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19;  
+    line-height: 1.19; 
+    
+    margin-bottom: 10px;
 }
 
 .team-position {
@@ -180,6 +240,7 @@ body {
 /* footer */
 .footer {
     background-color: var(--accent-bg-color);
+    
 }
 
 .footer .studio {
@@ -196,7 +257,10 @@ body {
 
 .map {
     color: var(--primary-white-color);
+    
 } 
+
+
 
 .footer .contacts {
     color: rgba(255, 255, 255, 0.6);
@@ -218,6 +282,11 @@ body {
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+
+    min-width: 73px;
+    padding: 6px 22px;
+
+    
 }
 
 .button.secondary:hover,
