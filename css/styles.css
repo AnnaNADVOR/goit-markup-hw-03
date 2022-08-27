@@ -312,7 +312,6 @@ img {
 
 .team .card {
   background-color: var(--primary-white-color);
-  text-align: center;
 
   width: 270px;
 
@@ -322,10 +321,8 @@ img {
 }
 
 .card-name {
-  display: inline-block;
-
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
+  text-align: center;
 }
 
 .team-name {
